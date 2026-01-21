@@ -1,64 +1,95 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
   <title>La Ferme des Rêveurs</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; }<img src="/images/serre.jpg" alt="logo-ferme-des-reveurs.png">
-    header {
-      background:#0f5b4f;
-      color:white;
-      text-align:center;
-      padding:60px 20px;
-      position:relative;
-      overflow:hidden;
-    }
-    /* Logo en gros derrière le titre */
-    header::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:url("logo.png") no-repeat center;
-      background-size:300px;  /* augmente si tu veux plus gros */
-      opacity:0.15;           /* transparence */
-      z-index:0;
-    }
-    header h1, header p { position:relative; z-index:1; margin:0; }
-    header h1 { font-size:40px; margin-bottom:12px; }
-    header p  { font-size:18px; opacity:0.95; }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    main { padding:20px; max-width:700px; margin:auto; }
-    section { background:#f3f3f3; padding:16px; border-radius:12px; margin:14px 0; }
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f5f7f4;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      text-align:center;
+      padding:40px 20px;
+      background:white;
+    }
+
+    .logo{
+      max-width:360px;
+      width:90%;
+      height:auto;
+      display:block;
+      margin:0 auto 20px;
+    }
+
+    h1{
+      color:#0a5c50;
+      margin-bottom:10px;
+    }
+
+    section{
+      max-width:900px;
+      margin:30px auto;
+      padding:24px;
+      background:white;
+      border-radius:12px;
+    }
+
+    h2{
+      color:#0a5c50;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      font-size:14px;
+      color:#666;
+    }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>La Ferme des Rêveurs</h1>
-  <p>Plants et légumes locaux · Réservations ouvertes</p>
-</header>
+  <!-- EN-TÊTE AVEC LOGO -->
+  <header>
+    <img src="/images/logo-ferme-des-reveurs.png"
+         alt="La Ferme des Rêveurs"
+         class="logo">
 
-<main>
+    <h1>La Ferme des Rêveurs</h1>
+    <p>Plants et légumes locaux · Agriculture à petite échelle</p>
+  </header>
+
+  <!-- SECTION PRÉSENTATION -->
   <section>
-    <h2>Produits</h2>
+    <h2>Bienvenue</h2>
+    <p>
+      La Ferme des Rêveurs est une ferme locale dédiée à la production
+      de plants et de légumes.
+    </p>
+  </section>
+
+  <!-- SECTION INFORMATIONS -->
+  <section>
+    <h2>Nos valeurs</h2>
     <ul>
-      <li>Plants de légumes</li>
-      <li>Légumes frais</li>
+      <li>Agriculture locale et responsable</li>
+      <li>Respect des animaux et de la terre</li>
+      <li>Production à échelle humaine</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Réservations</h2>
-    <p>Réservation obligatoire — quantités limitées.<br>
-    Paiement par virement Interac seulement.</p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Écris-nous pour réserver (nom, téléphone, produits, quantités).</p>
-  </section>
-</main>
+  <!-- PIED DE PAGE -->
+  <footer>
+    © La Ferme des Rêveurs – Tous droits réservés
+  </footer>
 
 </body>
 </html>
