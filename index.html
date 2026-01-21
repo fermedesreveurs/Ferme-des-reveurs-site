@@ -2,71 +2,63 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>La Ferme des Rêveurs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{font-family:Arial, sans-serif;margin:0;background:#f5faf8;color:#1f2937}
-    header{background:#0a5c50;color:#fff;padding:24px;text-align:center}
-    section{padding:24px;max-width:900px;margin:auto}
-    h2{color:#0a5c50}
-    .box{background:#fff;padding:20px;border-radius:14px;margin-bottom:20px}
-    footer{background:#e5f3ef;padding:20px;text-align:center}.logo{
-  width: 240px;
-  max-width: 85%;
-  height: auto;
-  display: block;
-  margin: 0 auto 12px;
-}
+    body { margin:0; font-family: Arial, sans-serif; }
+    header {
+      background:#0f5b4f;
+      color:white;
+      text-align:center;
+      padding:60px 20px;
+      position:relative;
+      overflow:hidden;
+    }
+    /* Logo en gros derrière le titre */
+    header::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:url("logo.png") no-repeat center;
+      background-size:300px;  /* augmente si tu veux plus gros */
+      opacity:0.15;           /* transparence */
+      z-index:0;
+    }
+    header h1, header p { position:relative; z-index:1; margin:0; }
+    header h1 { font-size:40px; margin-bottom:12px; }
+    header p  { font-size:18px; opacity:0.95; }
+
+    main { padding:20px; max-width:700px; margin:auto; }
+    section { background:#f3f3f3; padding:16px; border-radius:12px; margin:14px 0; }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="/images/logo-ferme-des-reveurs.png"
-       alt="La Ferme des Rêveurs"
-       class="logo">
-
   <h1>La Ferme des Rêveurs</h1>
   <p>Plants et légumes locaux · Réservations ouvertes</p>
 </header>
 
-<section class="box">
-  <h2>La ferme</h2>
-  <p>
-    La Ferme des Rêveurs offre des plants et des légumes.
-  </p>
-</section>
+<main>
+  <section>
+    <h2>Produits</h2>
+    <ul>
+      <li>Plants de légumes</li>
+      <li>Légumes frais</li>
+    </ul>
+  </section>
 
-<section class="box">
-  <h2>Produits</h2>
-  <ul>
-    <li>🌱 Plants de légumes</li>
-    <li>🥕 Légumes frais</li>
-    <li</li>
-  </ul>
-</section>
+  <section>
+    <h2>Réservations</h2>
+    <p>Réservation obligatoire — quantités limitées.<br>
+    Paiement par virement Interac seulement.</p>
+  </section>
 
-<section class="box">
-  <h2>Disponibilités & réservations</h2>
-  <p>
-    Réservation obligatoire — quantités limitées.<br>
-    💳 Paiement par <strong>virement Interac seulement</strong>.<br>
-    
-  </p>
-</section>
-
-<section class="box">
-  <h2>Coordonnées</h2>
-  <p>
-    📍 Gracefield<br>
-    📞 Téléphone : à complété<br>
-    ✉️ Courriel fermedesreveurs@gmail.com
-  </p>
-</section>
-
-<footer>
-  © La Ferme des Rêveurs
-</footer>
+  <section>
+    <h2>Contact</h2>
+    <p>Écris-nous pour réserver (nom, téléphone, produits, quantités).</p>
+  </section>
+</main>
 
 </body>
 </html>
